@@ -25,7 +25,7 @@
 
 			<ul class="global_nav u-cf">
 				<li>
-					<a href="" class="home">HOME</a>
+					<a href="<?php echo home_url('/'); ?>"" class="home">HOME</a>
 				</li>
 				<li>
 					<a href="" class="about">このブログについて</a>

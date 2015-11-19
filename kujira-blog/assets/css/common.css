@@ -1,5 +1,17 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    color: #2d2d2d;
-    font: 13px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Arial,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',Osaka,'ＭＳ Ｐゴシック',sans-serif;
-    -webkit-text-size-adjust: 100%;
+    color: #333;
+	font-size: 14px;
+    font-family:
+    	Verdana, Arial,
+    	'ヒラギノ角ゴ Pro W3',
+    	'Hiragino Kaku Gothic Pro',
+    	Osaka,
+    	'ＭＳ Ｐゴシック',
+    	sans-serif;
+    line-height: 160%;
 }
