@@ -106,9 +106,11 @@
 
 	#content .post_wrap .post_thum img {
 		width: 312px;
+		height: auto;
 		position: absolute;
+		top: 50%;
 		left: 50%;
-		margin-left: -156px;
+		margin: -50% 0 0 -156px;
 	}
 
 	#content .post_wrap .post_ttl {
