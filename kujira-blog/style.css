@@ -1,0 +1,17 @@
+/*
+Theme Name: kujira1993-blog
+Description: 20151119
+Theme URI: テーマの URL
+Author: kujira
+Author URI: 作った人の URL
+Version: 0.0
+License: ライセンス
+License URI: ライセンスの URL
+*/
+
+@import url("./assets/css/pc.css");
+@import url("./assets/css/tablet.css");
+@import url("./assets/css/smart.css");
+@import url("./assets/css/reset.css");
+@import url("./assets/css/utility.css");
+@import url("./assets/css/common.css");
