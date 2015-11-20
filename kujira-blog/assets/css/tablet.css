@@ -263,6 +263,7 @@
 
 	#content .single_inner img {
 		width: 100%;
+		height: auto;
 	}
 	
 	#content .single_inner h2 {
@@ -282,7 +283,7 @@
 		font-size: 14px;
 		color: #fff;
 		padding: 10px;
-		margin: 10px 0 10px;
+		margin: 10px 0;
 		background-color: #2d2d2d;
 	}
 
@@ -292,6 +293,7 @@
 
 	#content .single_wrap blockquote {
 		padding: 10px;
+		margin: 10px 0;
 		background-color: #e6e6e6;
 	}
 	
