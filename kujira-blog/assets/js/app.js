@@ -2,7 +2,7 @@ jQuery(function($){
     
     $(".post_ttl").each(function(){
         var $postTtl = $('.post_txt');
-        var cutFigure = '30'; // カットする文字数
+        var cutFigure = '18'; // カットする文字数
         var afterTxt = '...'; // 文字カット後に表示するテキスト
         var textLength = $(this).text().length;
         var textTrim = $(this).text().substr(0,(cutFigure))

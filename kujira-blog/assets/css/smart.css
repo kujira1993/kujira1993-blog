@@ -99,12 +99,14 @@
 
 	#content .post_wrap .post_ttl {
 		min-height: 22px;
+		line-height: 17px;
 	}
 
 	#content .post_wrap .post_txt {
-		min-height: 46px;
+		min-height: 38px;
 		font-size: 11px;
 		padding-bottom: 10px;
+		line-height: 14px;
 		visibility: hidden;
 	}
 

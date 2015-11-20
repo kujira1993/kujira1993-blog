@@ -147,8 +147,8 @@
 		height: auto;
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		margin: -50% 0 0 -50%;
+		left: 0;
+		margin-top: -50%;
 	}
 	
 	#content .post_wrap .post_ttl {
@@ -173,7 +173,9 @@
 		min-height: 46px;
 		font-size: 12px;
 		padding-bottom: 10px;
+		line-height: 15px;
 		visibility: hidden;
+	    word-break: break-all;
 		box-sizing: border-box;
 	}
 
