@@ -15,3 +15,8 @@ body {
     	sans-serif;
     line-height: 160%;
 }
+
+#content .post_line,
+#content hr {
+    margin: 0 0 10px;
+}

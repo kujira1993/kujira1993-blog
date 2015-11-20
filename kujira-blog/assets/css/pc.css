@@ -11,12 +11,15 @@
 
 	.header_inner {
 		width: 980px;
-		padding: 12px 0;
+		height: 78px;
+		padding: 10px 0;
 		margin: 0 auto;
 		color: #fff;
+		box-sizing: border-box;
 	}
 
 	.header_inner .logo_wrap {
+		width: 158px;
 		padding-right: 40px;
 		text-align: center;
 		border-right: 1px solid #fff;
@@ -27,6 +30,7 @@
 		font-size: 36px;
 		font-weight: bold;
 		font-family: 'Josefin Sans', sans-serif;
+		line-height: 36px;
 	}
 
 	.header_inner .logo_wrap .sub_ttl {
@@ -65,7 +69,7 @@
 
 	#content {
 		width: 100%;
-		margin: 100px auto 50px;
+		margin: 78px auto 50px;
 		background-color: #fff;
 		box-sizing: border-box;
 	}
@@ -135,11 +139,6 @@
 		padding-bottom: 10px;
 		visibility: hidden;
 		box-sizing: border-box;
-	}
-
-	#content .post_line,
-	#content hr {
-		margin: 0 0 10px;
 	}
 
 	#content .post_wrap .post_day {
@@ -246,6 +245,7 @@
 	#content .single_wrap {
 		width: 960px;
 		margin: 0 auto;
+		padding-top: 20px;
 	}
 
 	#content .single_wrap .single_inner {
@@ -271,7 +271,7 @@
 	#content .single_wrap h4 {
 		font-size: 14px;
 		color: #fff;
-		padding: 10px 0 10px 10px;
+		padding: 10px;
 		margin: 10px 0 10px;
 		background-color: #2d2d2d;
 	}
@@ -281,7 +281,7 @@
 	}
 
 	#content .single_wrap blockquote {
-		padding: 10px 0 10px 10px;
+		padding: 10px;
 		background-color: #e6e6e6;
 	}
 

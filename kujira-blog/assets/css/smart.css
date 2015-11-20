@@ -29,6 +29,7 @@
 		margin: 0 auto;
 		color: #fff;
 		position: relative;
+		box-sizing: border-box;
 	}
 
 	.header_inner .logo_wrap {
