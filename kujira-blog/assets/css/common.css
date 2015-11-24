@@ -14,6 +14,7 @@ body {
     	'ＭＳ Ｐゴシック',
     	sans-serif;
     line-height: 160%;
+    word-break: break-all;
 }
 
 #content .post_line,

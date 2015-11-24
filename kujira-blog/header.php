@@ -19,7 +19,7 @@
 	<div class="header">
 		<div class="header_inner u-cf">
 			<div class="logo_wrap">
-				<h1><a href="" class="logo">Kujira1993.</a></h1>
+				<h1><a href="<?php echo home_url('/'); ?>" class="logo">Kujira1993.</a></h1>
 				<h2 class="sub_ttl">web記録帳</h2>
 			</div>
 

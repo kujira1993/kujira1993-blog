@@ -25,7 +25,7 @@
 		</div>
 
 		<div id="page-top" class="go_top_btn">
-			<a href=""><img src="<?php echo get_template_directory_uri(); ?>/images//go_top.png" alt=""></a>
+			<a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/go_top.png" alt=""></a>
 		</div>
 
 	</div>

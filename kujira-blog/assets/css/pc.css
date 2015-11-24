@@ -239,8 +239,23 @@
 	#content .sidebar {
 		width: 280px;
 		height: 500px;
-		background-color: #000;
+		padding: 10px;
+		background-color: #fff;
+		box-sizing: border-box;
+		box-shadow: 0 2px 10px #d2d2d2;
 		float: left;
+	}
+
+	#content .sidebar .sidebar_inner_ttl {
+		font-size: 14px;
+		font-weight: bold;
+		border-bottom: 1px solid #2d2d2d;
+	}
+
+	#content .sidebar .sidebar_inner_ttl:before {
+		content:" ";
+		background-image: 
+
 	}
 	
 	/**********************/
@@ -280,13 +295,44 @@
 		background-color: #2d2d2d;
 	}
 
+	#content .single_wrap h5 {
+		font-size: 14px;
+		color: #2d2d2d;
+		padding: 10px;
+		margin: 10px 0 10px;
+		border-left: 4px solid #2d2d2d;
+	}
+
 	#content .single_wrap a {
 		color: #00DFFC;
 	}
 
 	#content .single_wrap blockquote {
-		padding: 10px;
-		background-color: #e6e6e6;
+		background-color:#ddd;
+		padding:1em 3em;
+		position:relative;
+	}
+
+	#content .single_wrap blockquote:before {
+		content:"“";
+		font-size:600%;
+		line-height:1em;
+		font-family:"ＭＳ Ｐゴシック",sans-serif;
+		color:#999;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+
+	#content .single_wrap blockquote:after {
+		content:"”";
+		font-size: 600%;
+		line-height: 0em;
+		font-family: "ＭＳ Ｐゴシック",sans-serif;
+		color: #999;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 
 	#content .single_wrap a:hover {
