@@ -1,37 +1,24 @@
 <?php
 /*
-Template Name: about
+Template Name: page
 */
 ?>
 
 <?php get_header(); ?>
 
-<div id="content" class="widecolumn">
-
- <?php if (have_posts()) : while (have_posts()) : the_post();?>
- <div class="post">
-  <h2 id="post-<?php the_ID(); ?>"><?php the_title();?></h2>
-  <div class="entrytext">
-   <?php the_content('<p class="serif">このページの続きを読む &raquo;</p>'); ?>
+  <div id="content">
+    <div class="page_wrap u-cf">
+      <div class="page_inner">
+        <?php if (have_posts()) : while (have_posts()) : the_post();?>
+        <h2 id="post-<?php the_ID(); ?>" class="page_inner_ttl"><?php the_title();?></h2>
+        <div class="entrytext">
+          <?php the_content(); ?>
+        </div>
+        <?php endwhile; endif; ?>
+      </div>
+      <?php get_sidebar('single'); ?>
+    </div>
   </div>
- </div>
- <?php endwhile; endif; ?>
- <?php edit_post_link('この記事を編集', '<p>', '</p>'); ?>
 
-</div>
-<div id="main">
 
-<?php include (TEMPLATEPATH . '/searchform.php'); ?>
-
-<h2>月別アーカイブ</h2>
-  <ul>
-    <?php wp_get_archives('type=monthly'); ?>
-  </ul>
-
-<h2>カテゴリー別アーカイブ</h2>
-  <ul>
-     <?php wp_list_cats(); ?>
-  </ul>
-
-</div>
 <?php get_footer(); ?>

@@ -312,13 +312,15 @@
 	/**********************/
 	/*		single        */
 	/**********************/
-	#content .single_wrap {
+	#content .single_wrap,
+	#content .page_wrap {
 		width: 960px;
 		margin: 0 auto;
 		padding-top: 20px;
 	}
 
-	#content .single_inner {
+	#content .single_inner,
+	#content .page_inner {
 		width: 680px;
 		padding-right: 20px;
 		box-sizing: border-box;
@@ -354,7 +356,8 @@
 		border-left: 4px solid #2d2d2d;
 	}
 
-	#content .single_wrap a {
+	#content .single_wrap a,
+	#content .page_wrap a {
 		color: #00DFFC;
 	}
 
@@ -421,6 +424,70 @@
 	
 	#content .single_wrap .single_post_category a:hover {
 		color: #00DFFC;
+	}
+
+	/**********************/
+	/*		  page        */
+	/**********************/
+	.page_wrap .page_inner .page_inner_ttl {
+		font-size: 26px;
+		font-weight: bold;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #2d2d2d;
+	}
+
+
+	#content .page_wrap h3 {
+		font-size: 16px;
+		font-weight: bold;
+		padding: 30px 0 5px 0;
+		margin-bottom: 10px;
+		border-bottom: 2px solid #2d2d2d;
+	}
+
+	#content .page_wrap h4 {
+		font-size: 14px;
+		color: #fff;
+		padding: 10px;
+		margin: 10px 0 10px;
+		background-color: #2d2d2d;
+	}
+
+	#content .page_wrap h5 {
+		font-size: 14px;
+		color: #2d2d2d;
+		padding: 10px;
+		margin: 10px 0 10px;
+		border-left: 4px solid #2d2d2d;
+	}
+
+	#content .page_inner blockquote {
+		background-color:#ddd;
+		padding:1em 3em;
+		position:relative;
+	}
+
+	#content .page_inner blockquote:before {
+		content:"“";
+		font-size:600%;
+		line-height:1em;
+		font-family:"ＭＳ Ｐゴシック",sans-serif;
+		color:#999;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+
+	#content .page_iner blockquote:after {
+		content:"”";
+		font-size: 600%;
+		line-height: 0em;
+		font-family: "ＭＳ Ｐゴシック",sans-serif;
+		color: #999;
+		position: absolute;
+		right: 0;
+		bottom: 0;
 	}
 
 }

@@ -35,6 +35,9 @@
           <!-- Facebook用 -->
           <div id="fb-root"></div>
         </div>
+        
+        <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="2"></div>
+
       </div>
 
 <?php get_sidebar('single'); ?>
