@@ -19,7 +19,7 @@
 				    <?php endwhile; ?>
 				<?php endif; ?>
 			</ul>
-			<a href="" class="more_btn">
+			<a href="<?php echo home_url('/'); ?>posts-all/" class="more_btn">
 				MORE POSTS
 			</a>
 		</div>
