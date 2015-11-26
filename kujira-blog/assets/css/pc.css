@@ -479,7 +479,7 @@
 		top:0;
 	}
 
-	#content .page_iner blockquote:after {
+	#content .page_inner blockquote:after {
 		content:"”";
 		font-size: 600%;
 		line-height: 0em;
@@ -488,6 +488,18 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
+	}
+
+	#content .page_inner .page_title {
+		font-size: 20px;
+		padding: 0 0 5px 5px;
+		margin-bottom: 30px;
+		border-left: 4px solid #2d2d2d;
+		border-bottom: 1px solid #2d2d2d;
+	}
+
+	#content .page_inner .entry_content {
+		
 	}
 
 }

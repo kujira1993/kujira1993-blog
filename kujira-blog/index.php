@@ -2,7 +2,7 @@
 	<div id="content">
 		<div class="content_inner">
 			<ul class="post_wrap u-cf">
-
+				<?php query_posts('posts_per_page=2'); ?>
 				<?php if (have_posts()) : ?>
 				    <?php while (have_posts()) : the_post(); ?>
 				    	<li>
@@ -17,11 +17,15 @@
 							</a>
 				    	</li>
 				    <?php endwhile; ?>
+				<?php else : ?>
+					Not Found.
 				<?php endif; ?>
 			</ul>
-			<a href="<?php echo home_url('/'); ?>posts-all/" class="more_btn">
-				MORE POSTS
-			</a>
+			<div id="more">
+				<a href="#" class="more_btn">
+					MORE POSTS
+				</a>
+			</div>
 		</div>
 
 		<div id="page-top" class="go_top_btn">
