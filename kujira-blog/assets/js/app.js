@@ -66,32 +66,33 @@ jQuery(function($){
 
     });
 
-var now_post_num = 6; // 現在表示されている数
-var get_post_num = 6; // もっと読むボタンを押した時に取得する数
-  
-jQuery("#more a").live("click", function() {
-      
-    jQuery("#more").html('<img class="ajax_loading" src="http://wordpress/wp-content/themes/kujira-blog/img/ajax-loader.gif" />');
+    var now_post_num = 3; // 現在表示されている数
+    var get_post_num = 3; // 一度に取得する数
      
-    jQuery.ajax({
-        type: 'post',
-        url: 'http://wordpress/wp-content/themes/kujira-blog/more.php',
-        data: {
-            'now_post_num': now_post_num,
-            'get_post_num': get_post_num
-        },
-        success: function(data) {
-            now_post_num = now_post_num + get_post_num;
-            data = JSON.parse(data);
-            jQuery(".main").append(data['html']);
-            jQuery("#more").remove();
-            if (!data['noDataFlg']) {
-                jQuery(".main").append('<div id="more"><a href="#" class="more_btn">MORE POSTS</a></div>');
-            }
-        }
+    $(function() {
+        $("#more_disp a").live("click", function() {
+             
+            $("#more_disp").html('<img class="ajax_loading" src="http:8888//localhost/kujira_blog/wp-content/themes/ajax_loading/images/ajax_loader.gif" />');
+             
+            $.ajax({
+                type: 'post',
+                url: 'http://localhost:8888/kujira_blog/wp-content/themes/ajax_loading/more-disp.php',
+                data: {
+                    'now_post_num': now_post_num,
+                    'get_post_num': get_post_num
+                },
+                success: function(data) {
+                    now_post_num = now_post_num + get_post_num;
+                    data = JSON.parse(data);
+                    $(".post_wrap").append(data['html']);
+                    $("#more_disp").remove();
+                    if (!data['noDataFlg']) {
+                        $("#container").append('<div id="more_disp"><a href="#" class="more_btn">MORE POSTS</a></div>');
+                    }
+                }
+            });
+            return false;
+        });
     });
-    return false;
-});
-
 
 });

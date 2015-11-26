@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 	<div id="content">
-		<div class="content_inner">
+		<div id="container" class="content_inner">
 			<ul class="post_wrap u-cf">
-				<?php query_posts('posts_per_page=2'); ?>
+				<?php query_posts('posts_per_page=3'); ?>
 				<?php if (have_posts()) : ?>
 				    <?php while (have_posts()) : the_post(); ?>
 				    	<li>
@@ -21,17 +21,13 @@
 					Not Found.
 				<?php endif; ?>
 			</ul>
-			<div id="more">
-				<a href="#" class="more_btn">
-					MORE POSTS
-				</a>
-			</div>
+			<div id="more_disp"><a href="#" class="more_btn">MORE POSTS</a></div>
+
 		</div>
 
 		<div id="page-top" class="go_top_btn">
 			<a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/go_top.png" alt=""></a>
 		</div>
-
 	</div>
 
 <?php get_footer(); ?>
