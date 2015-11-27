@@ -2,7 +2,7 @@
 	<div id="content">
 		<div id="container" class="content_inner">
 			<ul class="post_wrap u-cf">
-				<?php query_posts('posts_per_page=3'); ?>
+				<?php query_posts('posts_per_page=9'); ?>
 				<?php if (have_posts()) : ?>
 				    <?php while (have_posts()) : the_post(); ?>
 				    	<li>

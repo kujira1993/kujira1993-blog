@@ -34,7 +34,7 @@ fjs.parentNode.insertBefore(js, fjs);
 
 			<ul class="global_nav u-cf">
 				<li>
-					<a href="<?php echo home_url('/'); ?>"" class="home">HOME</a>
+					<a href="<?php echo home_url('/'); ?>" class="home">HOME</a>
 				</li>
 				<li>
 					<a href="<?php echo home_url('/'); ?>about-blog/" class="about">このブログについて</a>
@@ -43,7 +43,7 @@ fjs.parentNode.insertBefore(js, fjs);
 					<a href="<?php echo home_url('/'); ?>contact/" class="contact">コンタクト</a>
 				</li>
 				<li>
-					<a href="" class="category">カテゴリ</a>
+					<a href="<?php echo home_url('/'); ?>category/" class="category">カテゴリ</a>
 				</li>
 				<li class="global_nav_search">
 					<a href="" class="search">検索</a>
