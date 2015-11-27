@@ -5,9 +5,9 @@
 				<p class="sidebar_profile_icon"><img src="<?php echo get_template_directory_uri(); ?>/images/profile.jpg" alt="" width="50"></p>
 				<p class="u-mb10">運営者の鯨岡です。興味があることや、日々のTipsを書いていこうとおもいます。</p>
 				<ul class="sidebar_profile_sns u-cf">
-					<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/profile_fb.png" alt="" width="50"></a></li>
-					<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/profile_twitter.png" alt="" width="50"></a></li>
-					<li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/images/profile_insta.png" alt="" width="50"></a></li>
+					<li><a href="https://www.facebook.com/daiske.kujiraoka" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/profile_fb.png" alt="" width="50"></a></li>
+					<li><a href="https://twitter.com/DKujiraoka" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/profile_twitter.png" alt="" width="50"></a></li>
+					<li><a href="https://www.instagram.com/kujira1993/" target="blank"><img src="<?php echo get_template_directory_uri(); ?>/images/profile_insta.png" alt="" width="50"></a></li>
 				</ul>
 			</li>
 			<li class="u-mb20">

@@ -412,6 +412,125 @@
 		bottom: 0;
 	}
 
+	/**********************/
+	/*		  page        */
+	/**********************/
+	.page_wrap .page_inner .page_inner_ttl {
+		font-size: 26px;
+		font-weight: bold;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #2d2d2d;
+	}
+
+	#content .page_wrap {
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+	#content .page_wrap h3 {
+		font-size: 16px;
+		font-weight: bold;
+		padding: 30px 0 5px 0;
+		margin-bottom: 10px;
+		border-bottom: 2px solid #2d2d2d;
+	}
+
+	#content .page_wrap h4 {
+		font-size: 14px;
+		color: #fff;
+		padding: 10px;
+		margin: 10px 0 10px;
+		background-color: #2d2d2d;
+	}
+
+	#content .page_wrap h5 {
+		font-size: 14px;
+		color: #2d2d2d;
+		padding: 10px;
+		margin: 10px 0 10px;
+		border-left: 4px solid #2d2d2d;
+	}
+
+	#content .page_inner blockquote {
+		background-color:#ddd;
+		padding:1em 3em;
+		position:relative;
+	}
+
+	#content .page_inner blockquote:before {
+		content:"“";
+		font-size:600%;
+		line-height:1em;
+		font-family:"ＭＳ Ｐゴシック",sans-serif;
+		color:#999;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+
+	#content .page_inner blockquote:after {
+		content:"”";
+		font-size: 600%;
+		line-height: 0em;
+		font-family: "ＭＳ Ｐゴシック",sans-serif;
+		color: #999;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	#content .page_inner .page_title {
+		font-size: 20px;
+		padding: 0 0 5px 5px;
+		margin-bottom: 30px;
+		border-left: 4px solid #2d2d2d;
+		border-bottom: 1px solid #2d2d2d;
+	}
+	/**********************/
+	/*	page - posts-all  */
+	/**********************/
+	#content .all_post_wrap .post {
+		padding: 10px 0;
+		border-bottom: 1px solid #e9e9e9;
+	}
+
+	#content .post .all_post_thumb {
+		width: 25%;
+		padding-right: 10px;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	#content .post .all_post_ttl {
+		font-size: 18px;
+		font-weight: bold;
+		padding: 10px 0 0;
+		margin-bottom: 5px;
+		border-bottom: none;
+	}
+	
+	#content .post .all_post_ex {
+		color: #2d2d2d;
+		font-size: 12px;
+	}
+
+	#content .post .all_post_day {
+		font-size: 12px;
+		color: #969696;
+		text-align: right;
+	}
+
+	#content .post .all_post_thumb img {
+		width: 100%;
+		height: auto;
+	}
+
+	#content .post .all_post_inner {
+		width: 75%;
+		float: left;
+	}
+
 
 
 

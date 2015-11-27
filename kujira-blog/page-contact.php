@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: page
+Template Name: page-contact
 */
 ?>
 

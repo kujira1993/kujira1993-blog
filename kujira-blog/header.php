@@ -37,10 +37,10 @@ fjs.parentNode.insertBefore(js, fjs);
 					<a href="<?php echo home_url('/'); ?>"" class="home">HOME</a>
 				</li>
 				<li>
-					<a href="" class="about">このブログについて</a>
+					<a href="<?php echo home_url('/'); ?>about-blog/" class="about">このブログについて</a>
 				</li>
 				<li>
-					<a href="" class="contact">コンタクト</a>
+					<a href="<?php echo home_url('/'); ?>contact/" class="contact">コンタクト</a>
 				</li>
 				<li>
 					<a href="" class="category">カテゴリ</a>

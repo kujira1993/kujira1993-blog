@@ -13,8 +13,14 @@
 	}
 	add_filter( 'wp_title', 'mypace_custom_title', 10, 2 ); //フィルターフックで処理を上書き
 
-	add_action('wp_ajax_content_load','ajax_content_load');
-	 
-	add_action('wp_ajax_nopriv_content_load','ajax_content_load');
+	add_action( 'save_post', 'save_default_thumbnail' );
+	function save_default_thumbnail( $post_id ) {
+	$post_thumbnail = get_post_meta( $post_id, $key = '_thumbnail_id', $single = true );
+	if ( !wp_is_post_revision( $post_id ) ) {
+		if ( empty( $post_thumbnail ) ) {
+			update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '36' );
+		}
+	}
+	}
 
 ?>
