@@ -21,7 +21,7 @@
 					Not Found.
 				<?php endif; ?>
 			</ul>
-			<div id="more_disp"><a href="/kujira1993-blog-wordpress/posts-all/" class="more_btn">MORE POSTS</a></div>
+			<div id="more_disp"><a href="<?php echo home_url('/'); ?>posts-all/" class="more_btn">MORE POSTS</a></div>
 
 		</div>
 

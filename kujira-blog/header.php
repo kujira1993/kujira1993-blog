@@ -42,12 +42,12 @@ fjs.parentNode.insertBefore(js, fjs);
 				<li>
 					<a href="<?php echo home_url('/'); ?>contact/" class="contact">コンタクト</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="<?php echo home_url('/'); ?>category/" class="category">カテゴリ</a>
-				</li>
-				<li class="global_nav_search">
+				</li> -->
+				<!-- <li class="global_nav_search">
 					<a href="" class="search">検索</a>
-				</li>
+				</li> -->
 			</ul>
 
 			<p id="jsMenuBtn" class="menu_btn"><img src="<?php echo get_template_directory_uri(); ?>/images/menu_btn.png" alt="" width="100%" class="imgChange"></p>

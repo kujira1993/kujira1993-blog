@@ -299,7 +299,8 @@
 		text-align: right;
 	}
 
-	#content .single_wrap .sidebar_category_item {
+	#content .single_wrap .sidebar_category_item,
+	#content .page_wrap .sidebar_category_item {
 		display: block;
 		padding: 5px;
 		margin: 0 5px 5px 0;
