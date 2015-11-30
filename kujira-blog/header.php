@@ -15,6 +15,8 @@
 	?>
 	<?php wp_head(); ?>
 
+	<script src="https://apis.google.com/js/platform.js" async defer>{lang: 'ja'}</script>
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -41,6 +43,9 @@ fjs.parentNode.insertBefore(js, fjs);
 				</li>
 				<li>
 					<a href="<?php echo home_url('/'); ?>contact/" class="contact">コンタクト</a>
+				</li>
+				<li>
+					<a href="<?php echo home_url('/'); ?>posts-all/" class="category">記事一覧</a>
 				</li>
 				<!-- <li>
 					<a href="<?php echo home_url('/'); ?>category/" class="category">カテゴリ</a>
