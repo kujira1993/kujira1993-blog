@@ -12,7 +12,7 @@
 
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
-
+        <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="2"></div>
         <div class="social-area-syncer">
           <p class="u-tc">よかったらシェアお願いします！</p>
           <ul class="social-button-syncer">
@@ -36,7 +36,7 @@
           <div id="fb-root"></div>
         </div>
         
-        <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="2"></div>
+        
 
       </div>
 

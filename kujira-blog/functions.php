@@ -15,12 +15,19 @@
 
 	add_action( 'save_post', 'save_default_thumbnail' );
 	function save_default_thumbnail( $post_id ) {
-	$post_thumbnail = get_post_meta( $post_id, $key = '_thumbnail_id', $single = true );
-	if ( !wp_is_post_revision( $post_id ) ) {
-		if ( empty( $post_thumbnail ) ) {
-			update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '36' );
+		$post_thumbnail = get_post_meta( $post_id, $key = '_thumbnail_id', $single = true );
+		if ( !wp_is_post_revision( $post_id ) ) {
+			if ( empty( $post_thumbnail ) ) {
+				update_post_meta( $post_id, $meta_key = '_thumbnail_id', $meta_value = '36' );
+			}
 		}
 	}
+
+
+	function get_featured_image_url() {
+		$image_id = get_post_thumbnail_id();
+		$image_url = wp_get_attachment_image_src($image_id,'thumbnail', true);
+		echo $image_url[0];
 	}
 
 ?>

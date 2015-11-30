@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	<meta charset="UTF-8">
 	<meta name="description" content="kujira1993. web記録帳 TOPページ">
 	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+	
+	<meta property="og:title" content="<?php the_title(); ?>" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="<?php the_permalink() ?>" />
+	<meta property="og:description" content="<?php the_excerpt() ; ?>"/>
+	<?php
+	$image_id = get_post_thumbnail_id();
+	$image_url = wp_get_attachment_image_src($image_id,'full');
+	?>
+	<meta property="og:image" content="<?php echo $image_url[0]; ?>">
+	<meta property="og:site_name" content="Ateitexe" />
+	<meta property="fb:app_id" content="1440403052838898" />
+
 	<title>kujira1993.web記録帳</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -19,11 +32,11 @@
 <body>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=235637456624550";
-fjs.parentNode.insertBefore(js, fjs);
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=1440403052838898";
+  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 	<div class="header">
 		<div class="header_inner u-cf">
