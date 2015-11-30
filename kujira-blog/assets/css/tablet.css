@@ -415,6 +415,12 @@
 	/**********************/
 	/*		  page        */
 	/**********************/
+	#content .single_inner,
+	#content .page_inner {
+		padding: 20px 0;
+		box-sizing: border-box;
+	}
+
 	.page_wrap .page_inner .page_inner_ttl {
 		font-size: 26px;
 		font-weight: bold;
@@ -529,6 +535,58 @@
 	#content .post .all_post_inner {
 		width: 75%;
 		float: left;
+	}
+
+	/****************/
+	/*	sns tab      */
+	/****************/
+
+	.snsshare {
+	width: 100%;
+	margin-bottom: 20px;
+	}
+	#content .single_wrap .snsshare a,
+	#content .page_wrap .snsshare a {
+	width: 50%;
+	height: 30px;
+	padding: 14px 0;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.1em;
+	display: inline-block;
+	text-decoration: none;
+	}
+	.snsshare a:hover {
+	color: #fff;
+	text-decoration: underline;
+	}
+	.snsshare a#share_fb {
+	background-color: #3B5998;
+	border-bottom-color: #3C5A98;
+	}
+	.snsshare a#share_tw {
+	background-color: #00ACEE;
+	border-bottom-color: #0193CB;
+	}
+	.snsshare a#share_hatena {
+	background-color: #008FDE;
+	border-bottom-color: #007BBF;
+	}
+	.snsshare a#share_feedly {
+	background-color: #70CA3B;
+	border-bottom-color: #55823A;
+	}
+	.snsshare a#share_google {
+	background-color: #D43D37;
+	border-bottom: 1px solid #8D2D1D;
+	}
+	.snsshare a#share_line {
+	background-color: #00C300;
+	border-bottom: 1px solid #21AA10;
 	}
 
 

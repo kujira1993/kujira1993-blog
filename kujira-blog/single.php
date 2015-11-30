@@ -12,10 +12,9 @@
 
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
-        <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="2"></div>
+        <hr>
         <?php get_template_part( 'sns' ); ?>
-        
-        
+        <div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="2"></div>
 
       </div>
 

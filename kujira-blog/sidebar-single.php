@@ -29,6 +29,7 @@
 						</div>
 						
 					</li>
+					<hr>
 					<?php endwhile;?>
 				</ul>
 			</li>

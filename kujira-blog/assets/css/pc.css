@@ -242,7 +242,7 @@
 		background-color: #fff;
 		box-sizing: border-box;
 		box-shadow: 0 2px 10px #d2d2d2;
-		float: left;
+		float: right;
 	}
 
 	#content .sidebar .sidebar_inner_ttl {
@@ -322,8 +322,8 @@
 
 	#content .single_inner,
 	#content .page_inner {
-		width: 680px;
-		padding-right: 20px;
+		width: 650px;
+		padding: 20px 0;
 		box-sizing: border-box;
 		float: left;
 	}
@@ -540,6 +540,61 @@
 	#content .post .all_post_inner {
 		width: 550px;
 		float: left;
+	}
+
+	/******************************
+
+	 ソーシャルエリア全体を囲む要素
+	 * 他のコンテンツと距離を取りたい場合は[margin]を設定して下さい
+
+	******************************/
+	.snsshare {
+	width: 100%;
+	margin-bottom: 30px;
+	}
+	#content .single_wrap .snsshare a,
+	#content .page_wrap .snsshare a {
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	letter-spacing: 0.1em;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: boder-box;
+	}
+	#content .single_wrap .snsshare a:hover,
+	#content .page_wrap .snsshare a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+	}
+	.snsshare a#share_fb {
+	background-color: #3B5998;
+	border-bottom: 1px solid #3C5A98;
+	}
+	.snsshare a#share_tw {
+	background-color: #00ACEE;
+	border-bottom: 1px solid #0193CB;
+	}
+	.snsshare a#share_hatena {
+	background-color: #008FDE;
+	border-bottom: 1px solid #007BBF;
+	}
+	.snsshare a#share_feedly {
+	background-color: #70CA3B;
+	border-bottom: 1px solid #69A205;
+	}
+	.snsshare a#share_google {
+	background-color: #D43D37;
+	border-bottom: 1px solid #8D2D1D;
+	}
+	.snsshare a#share_line {
+	background-color: #00C300;
+	border-bottom: 1px solid #21AA10;
 	}
 
 }
